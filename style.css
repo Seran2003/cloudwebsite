@@ -1,0 +1,478 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
+}
+
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: #1D232C;
+}
+
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: #1D232C;
+}
+
+.navbar-menu-toggle{
+    display: none;
+}
+
+/*side navbar*/
+.side-navbar{
+    background-color: #1D232C;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 1s;
+    
+}
+
+.side-navbar-link{
+    margin-bottom: 30px;
+
+}
+
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+
+.resized-image{
+   padding: 20px;
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+   margin: 10px;
+   justify-content: space-around;
+}
+
+.header-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #1D232C;
+    color: white;
+    cursor: pointer;
+}
+
+.header-button:hover{
+    background-color: whitesmoke;
+    color: #1D232C;
+}
+
+.service{
+    padding: 20px;
+}
+
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container-2 div{
+    background-color: #F2F4F7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    color: #1D232C;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    border-radius: 10px;
+    border: none;
+}
+
+.new-arrival button:hover{
+    background-color: black;
+    color: white;
+}
+
+.service-container-2 div:hover{
+    background-color: lightgreen;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+
+.news button{
+    margin-top: 10px;
+    color: #F2F4F7;
+    background-color: #1D232C;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.news button:hover{
+    background-color: lightgreen;
+    color: #1D232C;
+}
+
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #1D232C;
+    color: #F2F4F7;
+}
+
+.product-section{
+    margin-top: 20px;
+}
+
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.product-search input:focus{
+    outline: none;  
+}
+
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.product-box img{
+    border-radius: 10px;
+}
+
+
+.message{
+    color: green;
+    display: none;
+    margin-top: 1rem;
+    font-weight: bold;
+ }
+  
+.error-message {
+    color: red;
+    display: none; 
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.footer-container input[type="submit"]{
+    background-color: greenyellow;
+    color: #1D232C;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+
+.footer-container input[type="submit"]:hover{
+    background-color: black;
+    color: #F2F4F7;
+}
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for form containers */
+.form-container {
+    max-width: 400px;
+    margin: 20px auto; /* Center align and provide margin */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Form styling */
+.form-container form {
+    display: block;
+    margin-bottom: 20px; /* Space between form and messages */
+}
+
+/* Label styling */
+.form-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px; /* Space between labels and inputs */
+}
+
+/* Input styling */
+.form-container input[type=text],
+.form-container input[type=password],
+.form-container input[type=email] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px; /* Space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styling */
+.form-container input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for form containers */
+.form-container {
+    max-width: 400px;
+    margin: 20px auto; /* Center align and provide margin */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    text-align: center; /* Center align text inside form containers */
+}
+
+/* Form styling */
+.form-container form {
+    display: block;
+    margin-bottom: 20px; /* Space between form and messages */
+}
+
+/* Label styling */
+.form-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px; /* Space between labels and inputs */
+    color: #333; /* Black color for labels */
+    text-align: left; /* Align labels to the left */
+}
+
+/* Input styling */
+.form-container input[type=text],
+.form-container input[type=password],
+.form-container input[type=email] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px; /* Space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styling */
+.form-container input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Green background for button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container input[type=submit]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Message styling */
+.message,
+.error-message {
+    display: none;
+    padding: 10px;
+    margin-bottom: 10px; /* Space between messages */
+    border-radius: 4px;
+}
+
+.message {
+    background-color: #dff0d8; /* Light green background for success message */
+    color: #3c763d; /* Dark green text color */
+}
+
+.error-message {
+    background-color: #f2dede; /* Light red background for error message */
+    color: #a94442; /* Dark red text color */
+}
+
+/* Switch form link styling */
+.switch-form {
+    margin-top: 10px; /* Space above switch form link */
+    text-align: center; /* Center align text inside switch form link */
+    color: brown; /* Brown color for switch form links */
+}
+
+.switch-form p {
+    margin-bottom: 10px; /* Space below switch form link */
+}
+
+.switch-form a {
+    color: brown; /* Brown color for switch form links */
+    text-decoration: none;
+}
+
+.switch-form a:hover {
+    text-decoration: underline;
+}
+
+/* Login and Sign Up title styling */
+.form-container h2 {
+    color: brown; /* Brown color for Login and Sign Up titles */
+}
+
+/*media query*/
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+    
+}
+
+
+
+
+.main{ 
+    padding:20px; 
+    font-family: 'Helvetica', serif; 
+    box-shadow: 5px 5px 7px 5px #888888; 
+      
+} 
+.main h1{ 
+    font-size: 40px; 
+    text-align:center; 
+    font-family: 'Helvetica', serif; 
+      
+} 
+input{ 
+    font-family: 'Helvetica', serif; 
+    width: 100%; 
+    font-size: 20px; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    border: none; 
+    border-bottom: 2px solid #767474; 
+} 
+input[type=submit] { 
+    font-family: 'Helvetica', serif; 
+    width: 100%; 
+    background-color: #767474; 
+    border: none; 
+    color: white; 
+    padding: 16px 32px; 
+    margin: 4px 2px; 
+    border-radius: 10px; 
+}
